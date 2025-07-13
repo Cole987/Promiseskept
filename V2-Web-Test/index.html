@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PromiseTracker Web</title>
+<style>
+  /* Reset & base */
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: #fff;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 20px;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  input[type="search"] {
+    width: 100%;
+    font-size: 1rem;
+    padding: 8px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #c7c7cc;
+    border-radius: 8px;
+    outline-offset: 2px;
+    outline-color: #007aff;
+  }
+
+  .promise-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .promise-item {
+    background: #f2f2f7;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    padding: 16px 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: box-shadow 0.25s ease;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .promise-item:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+
+  .promise-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+
+  .promise-title {
+    font-weight: 600;
+    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .pinned {
+    color: #ff9500;
+  }
+
+  .priority {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    user-select: none;
+  }
+  .priority.low {
+    background: #d1f0d7;
+    color: #2e7d32;
+  }
+  .priority.medium {
+    background: #fff4db;
+    color: #a97c00;
+  }
+  .priority.high {
+    background: #ffd8d8;
+    color: #bf360c;
+  }
+
+  .promise-notes {
+    font-size: 0.9rem;
+    color: #6e6e73;
+    margin-bottom: 10px;
+  }
+
+  .progress-bar {
+    background: #d1d1d6;
+    border-radius: 8px;
+    height: 8px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .progress-fill {
+    background: #007aff;
+    height: 8px;
+    width: 0%;
+    transition: width 0.5s ease;
+  }
+
+  .status-icon {
+    font-size: 1.25rem;
+  }
+
+  /* Simple container for the app */
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>PromiseTracker</h1>
+    <input type="search" id="searchInput" placeholder="Rechercher..." />
+
+    <ul id="promiseList" class="promise-list"></ul>
+  </div>
+
+<script>
+  const PROMISES = [
+    {
+      id: 1,
+      title: "Apprendre JavaScript",
+      notes: "Faire des tutos et pratiquer chaque jour",
+      priority: "high",
+      status: "active",
+      progress: 0.5,
+      pinned: true,
+    },
+    {
+      id: 2,
+      title: "Terminer le projet ESCE",
+      notes: "",
+      priority: "medium",
+      status: "completed",
+      progress: 1,
+      pinned: false,
+    },
+    {
+      id: 3,
+      title: "Faire du sport",
+      notes: "3 séances par semaine",
+      priority: "low",
+      status: "failed",
+      progress: 0.2,
+      pinned: false,
+    },
+    {
+      id: 4,
+      title: "Lire un livre sur la guerre froide",
+      notes: "Commencer ce week-end",
+      priority: "medium",
+      status: "active",
+      progress: 0.1,
+      pinned: false,
+    },
+  ];
+
+  const statusIcons = {
+    active: "⏳",
+    completed: "✅",
+    failed: "❌",
+  };
+
+  function priorityClass(priority) {
+    if (priority === "low") return "low";
+    if (priority === "medium") return "medium";
+    return "high";
+  }
+
+  function renderPromises(filter = "") {
+    const list = document.getElementById("promiseList");
+    list.innerHTML = "";
+
+    // On trie avec les épinglés en premier
+    const filteredPromises = PROMISES
+      .filter(p =>
+        p.title.toLowerCase().includes(filter.toLowerCase()) ||
+        p.notes.toLowerCase().includes(filter.toLowerCase())
+      )
+      .sort((a, b) => {
+        if (a.pinned && !b.pinned) return -1;
+        if (!a.pinned && b.pinned) return 1;
+        return 0;
+      });
+
+    filteredPromises.forEach(p => {
+      const li = document.createElement("li");
+      li.className = "promise-item";
+
+      li.innerHTML = `
+        <div class="promise-header">
+          <div class="promise-title">
+            <span class="status-icon">${statusIcons[p.status]}</span>
+            ${p.title}
+            ${p.pinned ? '<span class="pinned" title="Épinglé">📌</span>' : ""}
+          </div>
+          <div class="priority ${priorityClass(p.priority)}">${p.priority}</div>
+        </div>
+        ${p.notes ? `<p class="promise-notes">${p.notes}</p>` : ""}
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: ${p.progress * 100}%"></div>
+        </div>
+      `;
+
+      list.appendChild(li);
+    });
+  }
+
+  document.getElementById("searchInput").addEventListener("input", (e) => {
+    renderPromises(e.target.value);
+  });
+
+  renderPromises();
+
+</script>
+</body>
+</html>
