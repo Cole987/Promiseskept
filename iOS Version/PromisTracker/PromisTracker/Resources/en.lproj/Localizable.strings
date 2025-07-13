@@ -121,3 +121,5 @@
 "enter_username" = "Enter your name";
 "time_remaining_format" = "%dj %dh remaining";
 "username" = "Your name";
+"pin" = "Pin";
+"unpin" = "Unpin";

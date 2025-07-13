@@ -2,7 +2,6 @@ import SwiftUI
 
 struct SettingsView: View {
     @Binding var isDarkMode: Bool
-    @Binding var selectedLanguage: String
     @AppStorage("hasSeenTutorial") private var hasSeenTutorial = true
     @AppStorage("userName") private var userName: String = ""
 
@@ -12,17 +11,6 @@ struct SettingsView: View {
                 // Section Apparence
                 Section(header: Text(NSLocalizedString("appearance", comment: "Apparence"))) {
                     Toggle(NSLocalizedString("dark_mode", comment: "Mode Sombre"), isOn: $isDarkMode)
-                }
-
-                // Section Langue
-                Section(header: Text(NSLocalizedString("language", comment: "Langue"))) {
-                    Picker(NSLocalizedString("language", comment: "Langue"), selection: $selectedLanguage) {
-                        Text("Français").tag("fr")
-                        Text("English").tag("en")
-                        Text("Русский").tag("ru")
-                        Text("Кыргызча").tag("kg")
-                    }
-                    .pickerStyle(SegmentedPickerStyle())
                 }
 
                 // Section Nom utilisateur

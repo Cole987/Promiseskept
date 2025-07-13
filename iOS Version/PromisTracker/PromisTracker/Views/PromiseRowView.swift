@@ -74,6 +74,14 @@ struct PromiseRowView: View {
         .shadow(color: Color.black.opacity(0.1), radius: 4, x: 0, y: 2)
         .contextMenu {
             Button {
+                togglePinned()
+            } label: {
+                Label(
+                    NSLocalizedString(promise.pinned ? "unpin" : "pin", comment: "Toggle pin status"),
+                    systemImage: promise.pinned ? "pin.slash" : "pin"
+                )
+            }
+            Button {
                 toggleComplete()
             } label: {
                 Label(
@@ -118,6 +126,12 @@ struct PromiseRowView: View {
             updated.completed = false
             updated.progress = 0
         }
+        viewModel.updatePromise(updated)
+    }
+    
+    func togglePinned() {
+        var updated = promise
+        updated.pinned.toggle()
         viewModel.updatePromise(updated)
     }
 

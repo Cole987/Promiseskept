@@ -122,3 +122,5 @@
 "time_remaining_format" = "%dj %dh restants";
 "username" = "Votre prénom";
 "completed" = "Terminé";
+"pin" = "Épingler";
+"unpin" = "Désépingler";

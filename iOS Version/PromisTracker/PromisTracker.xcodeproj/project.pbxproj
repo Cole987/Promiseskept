@@ -6,8 +6,23 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0A6B4A722E23EC370058A1F8 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0A5F32DE2E22F7E900B3D328 /* PromisTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PromisTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A6B4A592E23EC360058A1F8 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		0A6B4A5B2E23EC360058A1F8 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -46,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				0A5F32E02E22F7E900B3D328 /* PromisTracker */,
+				0A6B4A582E23EC360058A1F8 /* Frameworks */,
 				0A5F32DF2E22F7E900B3D328 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,6 +74,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		0A6B4A582E23EC360058A1F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A6B4A592E23EC360058A1F8 /* WidgetKit.framework */,
+				0A6B4A5B2E23EC360058A1F8 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -68,6 +93,7 @@
 				0A5F32DA2E22F7E900B3D328 /* Sources */,
 				0A5F32DB2E22F7E900B3D328 /* Frameworks */,
 				0A5F32DC2E22F7E900B3D328 /* Resources */,
+				0A6B4A722E23EC370058A1F8 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -267,6 +293,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PromisTracker/PromisTracker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DN3UJNQKD4;
@@ -299,6 +326,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PromisTracker/PromisTracker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DN3UJNQKD4;

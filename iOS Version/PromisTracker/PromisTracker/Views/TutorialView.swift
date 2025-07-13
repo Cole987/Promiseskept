@@ -9,7 +9,6 @@ struct TutorialView: View {
                 Spacer(minLength: 20)
 
                 VStack(spacing: 32) {
-                    // Titre & sous-titre
                     VStack(spacing: 12) {
                         Text(NSLocalizedString("tutorial_welcome", comment: "Bienvenue dans PromiseTracker"))
                             .font(.largeTitle)
@@ -24,7 +23,6 @@ struct TutorialView: View {
                             .padding(.horizontal)
                     }
 
-                    // Étapes du tutoriel
                     VStack(spacing: 24) {
                         TutorialExplanationBlock(icon: "plus.circle", titleKey: "tutorial_add_promise")
                         TutorialExplanationBlock(icon: "chart.bar.fill", titleKey: "tutorial_progress_bar")
@@ -58,7 +56,6 @@ struct TutorialView: View {
     }
 }
 
-// ✅ Bloc élégant avec texte bien centré verticalement avec l’icône
 struct TutorialExplanationBlock: View {
     var icon: String
     var titleKey: String

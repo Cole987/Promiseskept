@@ -7,7 +7,6 @@ extension Notification.Name {
     static let toggleCompleteShortcut = Notification.Name("toggleCompleteShortcut")
 }
 
-// MARK: - ContentView
 struct ContentView: View {
     @StateObject var viewModel = PromiseViewModel()
     @State private var showAdd = false
@@ -16,18 +15,15 @@ struct ContentView: View {
     @State private var selectedPromise: Promise? = nil
     @State private var showiCloudPrompt = true
     @State private var selectedTab = 0
-
     @State private var searchText = ""
 
     @AppStorage("isDarkMode") private var isDarkMode = false
-    @AppStorage("selectedLanguage") private var selectedLanguage = "fr"
     @AppStorage("hasSeenTutorial") private var hasSeenTutorial = false
     @AppStorage("userName") private var userName: String = ""
 
     let addShortcutNotification = NotificationCenter.default.publisher(for: .addPromiseShortcut)
     let toggleCompleteNotification = NotificationCenter.default.publisher(for: .toggleCompleteShortcut)
 
-    // Filtrage selon recherche
     var filteredActive: [Promise] {
         if searchText.isEmpty {
             return viewModel.active
@@ -37,6 +33,7 @@ struct ContentView: View {
             $0.notes.localizedCaseInsensitiveContains(searchText)
         }
     }
+
     var filteredCompleted: [Promise] {
         if searchText.isEmpty {
             return viewModel.completed
@@ -46,6 +43,7 @@ struct ContentView: View {
             $0.notes.localizedCaseInsensitiveContains(searchText)
         }
     }
+
     var filteredFailed: [Promise] {
         if searchText.isEmpty {
             return viewModel.failed
@@ -56,6 +54,49 @@ struct ContentView: View {
         }
     }
 
+    // MARK: - Sections pour alléger le body
+
+    var activeSection: some View {
+        Section(header: Text(NSLocalizedString("ActivePromisesSection", comment: "Active promises section header"))) {
+            ForEach(filteredActive) { promise in
+                PromiseRowView(promise: promise, viewModel: viewModel)
+                    .contentShape(Rectangle())
+                    .onTapGesture {
+                        selectedPromise = promise
+                    }
+            }
+            .onDelete(perform: viewModel.deletePromise)
+        }
+    }
+
+    var completedSection: some View {
+        Section(header: Text(NSLocalizedString("CompletedPromisesSection", comment: "Completed promises section header"))) {
+            ForEach(filteredCompleted) { promise in
+                PromiseRowView(promise: promise, viewModel: viewModel)
+                    .contentShape(Rectangle())
+                    .onTapGesture {
+                        selectedPromise = promise
+                    }
+            }
+            .onDelete(perform: viewModel.deletePromise)
+        }
+    }
+
+    var failedSection: some View {
+        Section(header: Text(NSLocalizedString("FailedPromisesSection", comment: "Failed promises section header"))) {
+            ForEach(filteredFailed) { promise in
+                PromiseRowView(promise: promise, viewModel: viewModel)
+                    .contentShape(Rectangle())
+                    .onTapGesture {
+                        selectedPromise = promise
+                    }
+            }
+            .onDelete(perform: viewModel.deletePromise)
+        }
+    }
+
+    // MARK: - Body
+
     var body: some View {
         Group {
             if !hasSeenTutorial {
@@ -64,55 +105,26 @@ struct ContentView: View {
                 TabView(selection: $selectedTab) {
                     NavigationView {
                         VStack(alignment: .leading, spacing: 8) {
-                            // Utilisation du nom utilisateur, "Yanis" par défaut si vide
-                            Text(String(format: NSLocalizedString("HelloUser", comment: "Greeting with username"), userName.isEmpty ? " " : userName))
+                            Text(String(format: NSLocalizedString("HelloUser", comment: "Greeting with username"), userName.isEmpty ? "Yanis" : userName))
                                 .font(.largeTitle)
                                 .bold()
                                 .padding(.horizontal)
-                            
+
                             Text(String(format: NSLocalizedString("YouHaveActivePromises", comment: "User active promises count"), viewModel.active.count))
                                 .font(.subheadline)
                                 .foregroundColor(.secondary)
                                 .padding(.horizontal)
 
-                            // Barre de recherche avec placeholder localisé
                             SearchBar(text: $searchText, placeholder: NSLocalizedString("SearchPlaceholder", comment: "Search bar placeholder"))
                                 .padding(.horizontal)
 
                             List {
-                                Section(header: Text(NSLocalizedString("ActivePromisesSection", comment: "Active promises section header"))) {
-                                    ForEach(filteredActive) { promise in
-                                        PromiseRowView(promise: promise, viewModel: viewModel)
-                                            .contentShape(Rectangle())
-                                            .onTapGesture {
-                                                selectedPromise = promise
-                                            }
-                                    }
-                                    .onDelete(perform: viewModel.deletePromise)
-                                }
-                                Section(header: Text(NSLocalizedString("CompletedPromisesSection", comment: "Completed promises section header"))) {
-                                    ForEach(filteredCompleted) { promise in
-                                        PromiseRowView(promise: promise, viewModel: viewModel)
-                                            .contentShape(Rectangle())
-                                            .onTapGesture {
-                                                selectedPromise = promise
-                                            }
-                                    }
-                                    .onDelete(perform: viewModel.deletePromise)
-                                }
-                                Section(header: Text(NSLocalizedString("FailedPromisesSection", comment: "Failed promises section header"))) {
-                                    ForEach(filteredFailed) { promise in
-                                        PromiseRowView(promise: promise, viewModel: viewModel)
-                                            .contentShape(Rectangle())
-                                            .onTapGesture {
-                                                selectedPromise = promise
-                                            }
-                                    }
-                                    .onDelete(perform: viewModel.deletePromise)
-                                }
+                                activeSection
+                                completedSection
+                                failedSection
                             }
                         }
-                        //.navigationTitle(NSLocalizedString("PromisesTitle", comment: "Navigation title")) // Ligne supprimée
+                        .navigationTitle("") // Titre supprimé
                         .toolbar {
                             ToolbarItem(placement: .navigationBarTrailing) {
                                 Button(action: { showAdd = true }) {
@@ -125,7 +137,7 @@ struct ContentView: View {
                     .tabItem { Label(NSLocalizedString("TabTracking", comment: "Tab label tracking"), systemImage: "checklist") }
                     .tag(0)
 
-                    SettingsView(isDarkMode: $isDarkMode, selectedLanguage: $selectedLanguage)
+                    SettingsView(isDarkMode: $isDarkMode)
                         .tabItem { Label(NSLocalizedString("TabSettings", comment: "Tab label settings"), systemImage: "gear") }
                         .tag(1)
 

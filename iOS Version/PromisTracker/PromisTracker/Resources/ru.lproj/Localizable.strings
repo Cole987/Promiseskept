@@ -1,5 +1,6 @@
-/* ContentView */
-"HelloUser" = "Здравствуйте, %@!";
+/* ---------- RUSSE ---------- */
+
+"HelloUser" = "Привет, %@!";
 "YouHaveActivePromises" = "У вас %d активных обещаний";
 "SearchPlaceholder" = "Поиск...";
 "ActivePromisesSection" = "Активные обещания";
@@ -12,24 +13,24 @@
 "AlertQuickAction" = "Быстрое действие";
 "AlertPromiseCompleted" = "Обещание отмечено как выполненное.";
 "AlertPromiseIncomplete" = "Обещание отмечено как невыполненное.";
-"AlertiCloudTitle" = "Подключение iCloud";
+"AlertiCloudTitle" = "Подключение к iCloud";
 "AlertiCloudMessage" = "Войдите в iCloud для синхронизации обещаний на всех устройствах.";
 "OkButton" = "ОК";
 
-/* SettingsView */
 "appearance" = "Внешний вид";
 "dark_mode" = "Темный режим";
 "language" = "Язык";
 "tutorial" = "Учебник";
-"review_tutorial" = "Повторить учебник";
+"review_tutorial" = "Просмотреть учебник";
 "settings" = "Настройки";
 
-/* AccountView */
 "account_title" = "Мой аккаунт";
-"connect_prompt" = "Пожалуйста, войдите";
+"connect_prompt" = "Войти";
 "login_button" = "Вход";
+"AccountTitle" = "Мой аккаунт";
+"AccountLoginPrompt" = "Войдите";
+"AccountLoginButton" = "Вход";
 
-/* AddPromiseView */
 "new_promise" = "Новое обещание";
 "cancel" = "Отмена";
 "add" = "Добавить";
@@ -41,19 +42,42 @@
 "priority_low" = "Низкий";
 "priority_medium" = "Средний";
 "priority_high" = "Высокий";
+"PriorityLow" = "Низкий";
+"PriorityMedium" = "Средний";
+"PriorityHigh" = "Высокий";
 "files" = "Файлы";
-"import_files" = "Импортировать файлы";
+"import_files" = "Импорт файлов";
 
-/* PromiseDetailView */
+"AddPromiseNavTitle" = "Новое обещание";
+"AddPromiseTitleHeader" = "Заголовок";
+"AddPromiseTitlePlaceholder" = "Введите заголовок";
+"AddPromiseNotesHeader" = "Заметки";
+"AddPromiseDatesHeader" = "Даты";
+"AddPromiseStartDate" = "Начало";
+"AddPromiseEndDate" = "Конец";
+"AddPromisePriorityHeader" = "Приоритет";
+"AddPromisePriorityPicker" = "Приоритет";
+"AddPromiseFilesHeader" = "Файлы";
+"AddPromiseImportFilesButton" = "Импорт файлов";
+
 "detail_title" = "Детали";
-"status_completed" = "Выполнено";
-"status_in_progress" = "В процессе";
-"status_failed" = "Неудача";
-"status_pinned" = "Закреплено";
-"edit" = "Редактировать";
-"progress_label" = "Прогресс: %d%%";
+"detail_navigation_title" = "Детали";
+"detail_edit_button" = "Редактировать";
+"detail_notes" = "Заметки";
+"detail_no_notes" = "Нет заметок";
+"detail_progress" = "Прогресс";
+"detail_progress_percent" = "Прогресс: %d%%";
+"detail_status" = "Статус";
+"detail_status_active" = "В процессе";
+"detail_status_completed" = "Выполнено";
+"detail_status_failed" = "Неудачно";
+"detail_status_pinned" = "Закреплено";
+"detail_priority" = "Приоритет";
+"detail_dates" = "Даты";
+"detail_start_date" = "Начало: %@";
+"detail_end_date" = "Конец: %@";
+"detail_files" = "Файлы";
 
-/* PromiseEditView */
 "edit_promise" = "Редактировать обещание";
 "save" = "Сохранить";
 "edit_title" = "Заголовок";
@@ -67,74 +91,35 @@
 "button_cancel" = "Отмена";
 "button_save" = "Сохранить";
 
-/* PromiseRowView */
 "mark_complete" = "Отметить выполненным";
 "mark_incomplete" = "Отметить невыполненным";
 "mark_failed" = "Отметить неудачным";
 "mark_active" = "Отметить активным";
 "delete" = "Удалить";
-"time_remaining" = "%dj %dh осталось";
-"time_remaining_format" = "%dj %dh осталось";
+"time_remaining" = "Осталось %dj %dh";
 "finished" = "Завершено";
 
-/* TutorialView */
 "tutorial_title" = "Учебник";
-"welcome_title" = "Добро пожаловать в PromiseTracker";
-"how_it_works" = "Вот как работает приложение:";
-"tip_add" = "Добавляйте обещания с помощью кнопки ➕";
-"tip_progress" = "Отслеживайте прогресс с помощью цветных полос";
-"tip_context_menu" = "Отмечайте выполненными, неудачными или закрепляйте долгим нажатием";
-"tip_settings" = "Управляйте настройками во вкладке";
-"start" = "Начать";
+"tutorial_welcome" = "Добро пожаловать в PromiseTracker";
+"tutorial_intro" = "Вот как работает приложение:";
+"tutorial_add_promise" = "Добавляйте обещания кнопкой ➕";
+"tutorial_progress_bar" = "Следите за прогрессом с помощью цветных полос";
+"tutorial_mark_status" = "Отмечайте как выполненное, неудачное или закрепляйте с помощью долгого нажатия";
+"tutorial_manage_settings" = "Управляйте настройками во вкладке настроек";
+"tutorial_start" = "Начать";
 
-/* OnboardingView */
-"onboarding_1_title" = "Добро пожаловать";
-"onboarding_1_desc" = "Легко и просто следите за своими обещаниями.";
-"onboarding_2_title" = "Приоритизация";
-"onboarding_2_desc" = "Назначайте приоритеты и следите за прогрессом.";
-"onboarding_3_title" = "Быстро и удобно";
-"onboarding_3_desc" = "Используйте 3D Touch для быстрого редактирования задач.";
-"next" = "Далее";
-"start_now" = "Начать";
+"onboarding_title_1" = "Добро пожаловать";
+"onboarding_desc_1" = "Легко и просто следите за своими обещаниями.";
+"onboarding_title_2" = "Приоритизируйте";
+"onboarding_desc_2" = "Назначайте приоритеты и следите за прогрессом.";
+"onboarding_title_3" = "Быстро и удобно";
+"onboarding_desc_3" = "Используйте 3D Touch для быстрого редактирования задач.";
+"onboarding_button_next" = "Далее";
+"onboarding_button_start" = "Начать";
 
 "enter_username" = "Введите ваше имя";
-/* PromiseDetailView */
-"detail_navigation_title" = "Детали обещания";
-"edit_navigation_title" = "Редактировать обещание";
-
-"detail_notes" = "Заметки";
-"detail_progress" = "Прогресс";
-"detail_progress_percent" = "Прогресс: %d%%";
-"detail_status" = "Статус";
-"detail_status_active" = "В процессе";
-"detail_status_failed" = "Не выполнено";
-"detail_priority" = "Приоритет";
-"detail_dates" = "Даты";
-"detail_start_date" = "Начало";
-"detail_end_date" = "Конец";
-"detail_edit_button" = "Редактировать";
-"detail_status_completed" = "Выполнена";
-"detail_no_notes" = "Нет заметок";
-"addpromise_nav_title" = "Новое обещание";
-"addpromise_nav_cancel" = "Отмена";
-"addpromise_nav_save" = "Сохранить";
-
-"addpromisetitleheader" = "Заголовок";
-"addpromisetitleplaceholder" = "Введите заголовок";
-"addpromisenotesheader" = "Заметки";
-"addpromisedatesheader" = "Даты";
-"addpromisestartdate" = "Начало";
-"addpromiseenddate" = "Конец";
-"addpromisepriorityheader" = "Приоритет";
-"priority_low" = "Низкий";
-"priority_medium" = "Средний";
-"priority_high" = "Высокий";
-
-"addpromisefilesheader" = "Файлы";
-"addpromisesimportfilesbutton" = "Импорт файлов";
-
-"add" = "Добавить";
-"cancel" = "Отмена";
-
-"account_title" = "Мой аккаунт";
-"account_login_prompt" = "Пожалуйста, войдите";
+"time_remaining_format" = "Осталось %dj %dh";
+"username" = "Ваше имя";
+"completed" = "Завершено";
+"pin" = "Закрепить";
+"unpin" = "Открепить";

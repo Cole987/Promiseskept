@@ -1,39 +1,40 @@
-/* ContentView */
+/* ---------- KYRGYZ ---------- */
+
 "HelloUser" = "Салам %@!";
-"YouHaveActivePromises" = "Сизде %d активдик убада бар";
+"YouHaveActivePromises" = "Сизде %d аткарылып жаткан убада бар";
 "SearchPlaceholder" = "Издөө...";
-"ActivePromisesSection" = "Активдик убада";
-"CompletedPromisesSection" = "Аткарылган";
-"FailedPromisesSection" = "Ийгиликсиз";
+"ActivePromisesSection" = "Аткарылып жаткан убадалар";
+"CompletedPromisesSection" = "Аткарылгандар";
+"FailedPromisesSection" = "Ийгиликсиздиктер";
 "PromisesTitle" = "Убадалар";
 "TabTracking" = "Көзөмөл";
-"TabSettings" = "Орнотуулар";
+"TabSettings" = "Жөндөөлөр";
 "TabAccount" = "Аккаунт";
-"AlertQuickAction" = "Жылдам аракет";
-"AlertPromiseCompleted" = "Убада аткарылган деп белгиленди.";
-"AlertPromiseIncomplete" = "Убада аткарылбаган деп белгиленди.";
-"AlertiCloudTitle" = "iCloud байланыш";
-"AlertiCloudMessage" = "Бардык түзмөктөрдө убадаңызды синхрондоштуруу үчүн iCloudка кириңиз.";
+"AlertQuickAction" = "Ыкчам аракет";
+"AlertPromiseCompleted" = "Убада аткарылды деп белгиленди.";
+"AlertPromiseIncomplete" = "Убада толук эмес деп белгиленди.";
+"AlertiCloudTitle" = "iCloudга туташуу";
+"AlertiCloudMessage" = "Бардык түзмөктөрүңүздө убадаларыңызды синхрондоштуруу үчүн iCloudга кириңиз.";
 "OkButton" = "ОК";
 
-/* SettingsView */
-"appearance" = "Тышкы көрүнүш";
+"appearance" = "Көрүнүш";
 "dark_mode" = "Караңгы режим";
 "language" = "Тил";
-"tutorial" = "Окуу куралы";
-"review_tutorial" = "Окууну кайталоо";
-"settings" = "Орнотуулар";
+"tutorial" = "Окутуу";
+"review_tutorial" = "Окутууну кайра көрүү";
+"settings" = "Жөндөөлөр";
 
-/* AccountView */
 "account_title" = "Менин аккаунтум";
-"connect_prompt" = "Кирүү";
+"connect_prompt" = "Кириңиз";
 "login_button" = "Кирүү";
+"AccountTitle" = "Менин аккаунтум";
+"AccountLoginPrompt" = "Кириңиз";
+"AccountLoginButton" = "Кирүү";
 
-/* AddPromiseView */
-"new_promise" = "Жаңы убадa";
+"new_promise" = "Жаңы убада";
 "cancel" = "Жокко чыгаруу";
 "add" = "Кошуу";
-"title" = "Тема";
+"title" = "Аталышы";
 "notes" = "Эскертүүлөр";
 "start_date" = "Баштоо";
 "end_date" = "Аяктоо";
@@ -41,23 +42,46 @@
 "priority_low" = "Төмөн";
 "priority_medium" = "Орто";
 "priority_high" = "Жогорку";
+"PriorityLow" = "Төмөн";
+"PriorityMedium" = "Орто";
+"PriorityHigh" = "Жогорку";
 "files" = "Файлдар";
 "import_files" = "Файлдарды импорттоо";
 
-/* PromiseDetailView */
-"detail_title" = "Толук маалымат";
-"status_completed" = "Аткарылды";
-"status_in_progress" = "Жүрүп жатат";
-"status_failed" = "Ийгиликсиз";
-"status_pinned" = "Түзүлгөн";
-"edit" = "Түзөтүү";
-"progress_label" = "Жеткирүү: %d%%";
+"AddPromiseNavTitle" = "Жаңы убада";
+"AddPromiseTitleHeader" = "Аталышы";
+"AddPromiseTitlePlaceholder" = "Аталышын киргизиңиз";
+"AddPromiseNotesHeader" = "Эскертүүлөр";
+"AddPromiseDatesHeader" = "Дата";
+"AddPromiseStartDate" = "Баштоо";
+"AddPromiseEndDate" = "Аяктоо";
+"AddPromisePriorityHeader" = "Маанилүүлүк";
+"AddPromisePriorityPicker" = "Маанилүүлүк";
+"AddPromiseFilesHeader" = "Файлдар";
+"AddPromiseImportFilesButton" = "Файлдарды импорттоо";
 
-/* PromiseEditView */
+"detail_title" = "Толук маалымат";
+"detail_navigation_title" = "Толук маалымат";
+"detail_edit_button" = "Өзгөртүү";
+"detail_notes" = "Эскертүүлөр";
+"detail_no_notes" = "Эскертүү жок";
+"detail_progress" = "Прогресс";
+"detail_progress_percent" = "Прогресс: %d%%";
+"detail_status" = "Статус";
+"detail_status_active" = "Аткарылып жатат";
+"detail_status_completed" = "Аткарылган";
+"detail_status_failed" = "Ийгиликсиз";
+"detail_status_pinned" = "Тиктирилген";
+"detail_priority" = "Маанилүүлүк";
+"detail_dates" = "Дата";
+"detail_start_date" = "Баштоо: %@";
+"detail_end_date" = "Аяктоо: %@";
+"detail_files" = "Файлдар";
+
 "edit_promise" = "Убаданы түзөтүү";
 "save" = "Сактоо";
-"edit_title" = "Тема";
-"edit_title_placeholder" = "Тема";
+"edit_title" = "Аталышы";
+"edit_title_placeholder" = "Аталыш";
 "edit_notes" = "Эскертүүлөр";
 "edit_priority" = "Маанилүүлүк";
 "edit_dates" = "Дата";
@@ -67,75 +91,35 @@
 "button_cancel" = "Жокко чыгаруу";
 "button_save" = "Сактоо";
 
-/* PromiseRowView */
 "mark_complete" = "Аткарылды деп белгилөө";
-"mark_incomplete" = "Аткарылган эмес деп белгилөө";
+"mark_incomplete" = "Толук эмес деп белгилөө";
 "mark_failed" = "Ийгиликсиз деп белгилөө";
-"mark_active" = "Активдүү деп белгилөө";
+"mark_active" = "Аткарылып жатат деп белгилөө";
 "delete" = "Өчүрүү";
 "time_remaining" = "%dj %dh калды";
-"time_remaining_format" = "%dj %dh калды";
 "finished" = "Аяктады";
 
-/* TutorialView */
-"tutorial_title" = "Окуу куралы";
-"welcome_title" = "PromiseTrackerге кош келиңиз";
-"how_it_works" = "Бул тиркеменин иштөө принциби:";
-"tip_add" = "➕ баскычын колдонуп убадаңызды кошуңуз";
-"tip_progress" = "Түс барларын колдонуп прогрессти байкап туруңуз";
-"tip_context_menu" = "Узак басуу менен аткарылган, ийгиликсиз же түзүлгөн деп белгилеңиз";
-"tip_settings" = "Орнотууларды тиешелүү бөлүмдөн башкарыңыз";
-"start" = "Баштоо";
+"tutorial_title" = "Окутуу";
+"tutorial_welcome" = "PromiseTracker'га кош келдиңиз";
+"tutorial_intro" = "Бул колдонмо кандай иштээрин түшүндүрөт:";
+"tutorial_add_promise" = "➕ баскычынан убадаларыңызды кошуңуз";
+"tutorial_progress_bar" = "Түстүү прогресс тилкелерин көзөмөлдөңүз";
+"tutorial_mark_status" = "Убадаларды аткарылды, ийгиликсиз же тиктирүү катары узак басуу менен белгилеңиз";
+"tutorial_manage_settings" = "Жөндөөлөрүңүздү тиешелүү тилкеден жөндөңүз";
+"tutorial_start" = "Баштоо";
 
-/* OnboardingView */
-"onboarding_1_title" = "Кош келиңиз";
-"onboarding_1_desc" = "Убадаларыңызды оңой жана жөнөкөй көзөмөлдөңүз.";
-"onboarding_2_title" = "Маанилүүлүктү белгилеңиз";
-"onboarding_2_desc" = "Маанилүүлүктү берип, прогрессти көзөмөлдөңүз.";
-"onboarding_3_title" = "Ыкчам жана ыңгайлуу";
-"onboarding_3_desc" = "Тапшырмаларды тез түзөтүү үчүн 3D Touchту колдонуңуз.";
-"next" = "Кийинки";
-"start_now" = "Баштоо";
+"onboarding_title_1" = "Кош келиңиз";
+"onboarding_desc_1" = "Убадаларыңызды оңой жана жөнөкөй көзөмөлдөңүз.";
+"onboarding_title_2" = "Маанилүүлүк бериңиз";
+"onboarding_desc_2" = "Маанилүүлүктү аныктаңыз жана прогрессти көзөмөлдөңүз.";
+"onboarding_title_3" = "Ыкчам жана ыңгайлуу";
+"onboarding_desc_3" = "Тапшырмаларды тез өзгөртүү үчүн 3D Touch'ту колдонуңуз.";
+"onboarding_button_next" = "Кийинки";
+"onboarding_button_start" = "Баштоо";
 
 "enter_username" = "Атыңызды киргизиңиз";
-"detail_edit_button" = "Түзөтүү";
-/* PromiseDetailView */
-"detail_navigation_title" = "Убаданын толук маалыматы";
-"edit_navigation_title" = "Убаданы түзөтүү";
-
-"detail_notes" = "Эскертүүлөр";
-"detail_progress" = "Прогресс";
-"detail_progress_percent" = "Прогресс: %d%%";
-"detail_status" = "Абалы";
-"detail_status_active" = "Аралыгында";
-"detail_status_failed" = "Иштебей калды";
-"detail_priority" = "Приоритет";
-"detail_dates" = "Күндөр";
-"detail_start_date" = "Баштоо";
-"detail_end_date" = "Аяктоо";
-"detail_edit_button" = "Түзөтүү";
-"detail_status_completed" = "Аткарылган";
-"detail_no_notes" = "Эскертүүлөр жок";
-"addpromise_nav_title" = "Жаңы Убада";
-"addpromise_nav_cancel" = "Жокко чыгаруу";
-"addpromise_nav_save" = "Сактоо";
-
-"addpromisetitleheader" = "Аталышы";
-"addpromisetitleplaceholder" = "Аталышты киргизиңиз";
-"addpromisenotesheader" = "Эскертүүлөр";
-"addpromisedatesheader" = "Дата";
-"addpromisestartdate" = "Баштоо";
-"addpromiseenddate" = "Аяктайт";
-"addpromisepriorityheader" = "Приоритет";
-"priority_low" = "Төмөн";
-"priority_medium" = "Орто";
-"priority_high" = "Жогорку";
-
-"addpromisefilesheader" = "Файлдар";
-"addpromisesimportfilesbutton" = "Файлдарды импорттоо";
-
-"add" = "Кошуу";
-"cancel" = "Жокко чыгаруу";
-
-"account_title" = "Менин эсебим";
-"account_login_prompt" = "Кирүүңүз";
+"time_remaining_format" = "%dj %dh калды";
+"username" = "Сиздин атыңыз";
+"completed" = "Аяктады";
+"pin" = "Тиктирүү";
+"unpin" = "Тиктирүүнү алып салуу";
