@@ -1,0 +1,123 @@
+/* ---------- ENGLISH ---------- */
+/* Localizable.strings (en) */
+
+"HelloUser" = "Hello %@!";
+"YouHaveActivePromises" = "You have %d active promises";
+"SearchPlaceholder" = "Search...";
+"ActivePromisesSection" = "Active Promises";
+"CompletedPromisesSection" = "Completed";
+"FailedPromisesSection" = "Failed";
+"PromisesTitle" = "Promises";
+"TabTracking" = "Tracking";
+"TabSettings" = "Settings";
+"TabAccount" = "Account";
+"AlertQuickAction" = "Quick Action";
+"AlertPromiseCompleted" = "Promise marked as completed.";
+"AlertPromiseIncomplete" = "Promise marked as incomplete.";
+"AlertiCloudTitle" = "iCloud Login";
+"AlertiCloudMessage" = "Connect to iCloud to sync your promises across devices.";
+"OkButton" = "OK";
+
+"appearance" = "Appearance";
+"dark_mode" = "Dark Mode";
+"language" = "Language";
+"tutorial" = "Tutorial";
+"review_tutorial" = "Review Tutorial";
+"settings" = "Settings";
+
+"account_title" = "My Account";
+"connect_prompt" = "Log in";
+"login_button" = "Login";
+"AccountTitle" = "My Account";
+"AccountLoginPrompt" = "Log in";
+"AccountLoginButton" = "Login";
+
+"new_promise" = "New Promise";
+"cancel" = "Cancel";
+"add" = "Add";
+"title" = "Title";
+"notes" = "Notes";
+"start_date" = "Start";
+"end_date" = "End";
+"priority" = "Priority";
+"priority_low" = "Low";
+"priority_medium" = "Medium";
+"priority_high" = "High";
+"PriorityLow" = "Low";
+"PriorityMedium" = "Medium";
+"PriorityHigh" = "High";
+"files" = "Files";
+"import_files" = "Import files";
+
+"AddPromiseNavTitle" = "New Promise";
+"AddPromiseTitleHeader" = "Title";
+"AddPromiseTitlePlaceholder" = "Enter a title";
+"AddPromiseNotesHeader" = "Notes";
+"AddPromiseDatesHeader" = "Dates";
+"AddPromiseStartDate" = "Start";
+"AddPromiseEndDate" = "End";
+"AddPromisePriorityHeader" = "Priority";
+"AddPromisePriorityPicker" = "Priority";
+"AddPromiseFilesHeader" = "Files";
+"AddPromiseImportFilesButton" = "Import files";
+
+"detail_title" = "Detail";
+"detail_navigation_title" = "Detail";
+"detail_edit_button" = "Edit";
+"detail_notes" = "Notes";
+"detail_no_notes" = "No notes";
+"detail_progress" = "Progress";
+"detail_progress_percent" = "Progress: %d%%";
+"detail_status" = "Status";
+"detail_status_active" = "In progress";
+"detail_status_completed" = "Completed";
+"detail_status_failed" = "Failed";
+"detail_status_pinned" = "Pinned";
+"detail_priority" = "Priority";
+"detail_dates" = "Dates";
+"detail_start_date" = "Start: %@";
+"detail_end_date" = "End: %@";
+"detail_files" = "Files";
+
+"edit_promise" = "Edit promise";
+"save" = "Save";
+"edit_title" = "Title";
+"edit_title_placeholder" = "Title";
+"edit_notes" = "Notes";
+"edit_priority" = "Priority";
+"edit_dates" = "Dates";
+"edit_start_date" = "Start";
+"edit_end_date" = "End";
+"edit_navigation_title" = "Edit promise";
+"button_cancel" = "Cancel";
+"button_save" = "Save";
+
+"mark_complete" = "Mark as Completed";
+"mark_incomplete" = "Mark as Incomplete";
+"mark_failed" = "Mark as Failed";
+"mark_active" = "Mark as Active";
+"delete" = "Delete";
+"time_remaining" = "%dj %dh remaining";
+"finished" = "Finished";
+
+"tutorial_title" = "Tutorial";
+"tutorial_welcome" = "Welcome to PromiseTracker";
+"tutorial_intro" = "Here is how the app works:";
+"tutorial_add_promise" = "Add your promises using the ➕ button";
+"tutorial_progress_bar" = "Track your progress with colorful bars";
+"tutorial_mark_status" = "Mark as complete, failed, or pin with long press";
+"tutorial_manage_settings" = "Manage your settings in the dedicated tab";
+"tutorial_start" = "Start";
+
+"onboarding_title_1" = "Welcome";
+"onboarding_desc_1" = "Track your promises easily and simply.";
+"onboarding_title_2" = "Prioritize";
+"onboarding_desc_2" = "Assign priorities and track progress.";
+"onboarding_title_3" = "Fast & Handy";
+"onboarding_desc_3" = "Use 3D Touch to quickly edit tasks.";
+"onboarding_button_next" = "Next";
+"onboarding_button_start" = "Start";
+
+"enter_username" = "Enter your name";
+"time_remaining_format" = "%dj %dh remaining";
+"username" = "Your name";

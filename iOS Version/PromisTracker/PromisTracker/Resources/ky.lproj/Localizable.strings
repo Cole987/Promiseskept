@@ -1,0 +1,141 @@
+/* ContentView */
+"HelloUser" = "Салам %@!";
+"YouHaveActivePromises" = "Сизде %d активдик убада бар";
+"SearchPlaceholder" = "Издөө...";
+"ActivePromisesSection" = "Активдик убада";
+"CompletedPromisesSection" = "Аткарылган";
+"FailedPromisesSection" = "Ийгиликсиз";
+"PromisesTitle" = "Убадалар";
+"TabTracking" = "Көзөмөл";
+"TabSettings" = "Орнотуулар";
+"TabAccount" = "Аккаунт";
+"AlertQuickAction" = "Жылдам аракет";
+"AlertPromiseCompleted" = "Убада аткарылган деп белгиленди.";
+"AlertPromiseIncomplete" = "Убада аткарылбаган деп белгиленди.";
+"AlertiCloudTitle" = "iCloud байланыш";
+"AlertiCloudMessage" = "Бардык түзмөктөрдө убадаңызды синхрондоштуруу үчүн iCloudка кириңиз.";
+"OkButton" = "ОК";
+
+/* SettingsView */
+"appearance" = "Тышкы көрүнүш";
+"dark_mode" = "Караңгы режим";
+"language" = "Тил";
+"tutorial" = "Окуу куралы";
+"review_tutorial" = "Окууну кайталоо";
+"settings" = "Орнотуулар";
+
+/* AccountView */
+"account_title" = "Менин аккаунтум";
+"connect_prompt" = "Кирүү";
+"login_button" = "Кирүү";
+
+/* AddPromiseView */
+"new_promise" = "Жаңы убадa";
+"cancel" = "Жокко чыгаруу";
+"add" = "Кошуу";
+"title" = "Тема";
+"notes" = "Эскертүүлөр";
+"start_date" = "Баштоо";
+"end_date" = "Аяктоо";
+"priority" = "Маанилүүлүк";
+"priority_low" = "Төмөн";
+"priority_medium" = "Орто";
+"priority_high" = "Жогорку";
+"files" = "Файлдар";
+"import_files" = "Файлдарды импорттоо";
+
+/* PromiseDetailView */
+"detail_title" = "Толук маалымат";
+"status_completed" = "Аткарылды";
+"status_in_progress" = "Жүрүп жатат";
+"status_failed" = "Ийгиликсиз";
+"status_pinned" = "Түзүлгөн";
+"edit" = "Түзөтүү";
+"progress_label" = "Жеткирүү: %d%%";
+
+/* PromiseEditView */
+"edit_promise" = "Убаданы түзөтүү";
+"save" = "Сактоо";
+"edit_title" = "Тема";
+"edit_title_placeholder" = "Тема";
+"edit_notes" = "Эскертүүлөр";
+"edit_priority" = "Маанилүүлүк";
+"edit_dates" = "Дата";
+"edit_start_date" = "Баштоо";
+"edit_end_date" = "Аяктоо";
+"edit_navigation_title" = "Убаданы түзөтүү";
+"button_cancel" = "Жокко чыгаруу";
+"button_save" = "Сактоо";
+
+/* PromiseRowView */
+"mark_complete" = "Аткарылды деп белгилөө";
+"mark_incomplete" = "Аткарылган эмес деп белгилөө";
+"mark_failed" = "Ийгиликсиз деп белгилөө";
+"mark_active" = "Активдүү деп белгилөө";
+"delete" = "Өчүрүү";
+"time_remaining" = "%dj %dh калды";
+"time_remaining_format" = "%dj %dh калды";
+"finished" = "Аяктады";
+
+/* TutorialView */
+"tutorial_title" = "Окуу куралы";
+"welcome_title" = "PromiseTrackerге кош келиңиз";
+"how_it_works" = "Бул тиркеменин иштөө принциби:";
+"tip_add" = "➕ баскычын колдонуп убадаңызды кошуңуз";
+"tip_progress" = "Түс барларын колдонуп прогрессти байкап туруңуз";
+"tip_context_menu" = "Узак басуу менен аткарылган, ийгиликсиз же түзүлгөн деп белгилеңиз";
+"tip_settings" = "Орнотууларды тиешелүү бөлүмдөн башкарыңыз";
+"start" = "Баштоо";
+
+/* OnboardingView */
+"onboarding_1_title" = "Кош келиңиз";
+"onboarding_1_desc" = "Убадаларыңызды оңой жана жөнөкөй көзөмөлдөңүз.";
+"onboarding_2_title" = "Маанилүүлүктү белгилеңиз";
+"onboarding_2_desc" = "Маанилүүлүктү берип, прогрессти көзөмөлдөңүз.";
+"onboarding_3_title" = "Ыкчам жана ыңгайлуу";
+"onboarding_3_desc" = "Тапшырмаларды тез түзөтүү үчүн 3D Touchту колдонуңуз.";
+"next" = "Кийинки";
+"start_now" = "Баштоо";
+
+"enter_username" = "Атыңызды киргизиңиз";
+"detail_edit_button" = "Түзөтүү";
+/* PromiseDetailView */
+"detail_navigation_title" = "Убаданын толук маалыматы";
+"edit_navigation_title" = "Убаданы түзөтүү";
+
+"detail_notes" = "Эскертүүлөр";
+"detail_progress" = "Прогресс";
+"detail_progress_percent" = "Прогресс: %d%%";
+"detail_status" = "Абалы";
+"detail_status_active" = "Аралыгында";
+"detail_status_failed" = "Иштебей калды";
+"detail_priority" = "Приоритет";
+"detail_dates" = "Күндөр";
+"detail_start_date" = "Баштоо";
+"detail_end_date" = "Аяктоо";
+"detail_edit_button" = "Түзөтүү";
+"detail_status_completed" = "Аткарылган";
+"detail_no_notes" = "Эскертүүлөр жок";
+"addpromise_nav_title" = "Жаңы Убада";
+"addpromise_nav_cancel" = "Жокко чыгаруу";
+"addpromise_nav_save" = "Сактоо";
+
+"addpromisetitleheader" = "Аталышы";
+"addpromisetitleplaceholder" = "Аталышты киргизиңиз";
+"addpromisenotesheader" = "Эскертүүлөр";
+"addpromisedatesheader" = "Дата";
+"addpromisestartdate" = "Баштоо";
+"addpromiseenddate" = "Аяктайт";
+"addpromisepriorityheader" = "Приоритет";
+"priority_low" = "Төмөн";
+"priority_medium" = "Орто";
+"priority_high" = "Жогорку";
+
+"addpromisefilesheader" = "Файлдар";
+"addpromisesimportfilesbutton" = "Файлдарды импорттоо";
+
+"add" = "Кошуу";
+"cancel" = "Жокко чыгаруу";
+
+"account_title" = "Менин эсебим";
+"account_login_prompt" = "Кирүүңүз";

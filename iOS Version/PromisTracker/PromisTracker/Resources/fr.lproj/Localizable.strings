@@ -1,0 +1,124 @@
+/* ---------- FRENCH ---------- */
+/* Localizable.strings (fr) */
+
+"HelloUser" = "Bonjour %@ !";
+"YouHaveActivePromises" = "Vous avez %d promesses en cours";
+"SearchPlaceholder" = "Rechercher...";
+"ActivePromisesSection" = "Promesses en cours";
+"CompletedPromisesSection" = "Succès";
+"FailedPromisesSection" = "Échecs";
+"PromisesTitle" = "Promesses";
+"TabTracking" = "Suivi";
+"TabSettings" = "Réglages";
+"TabAccount" = "Compte";
+"AlertQuickAction" = "Action rapide";
+"AlertPromiseCompleted" = "Promesse marquée accomplie.";
+"AlertPromiseIncomplete" = "Promesse marquée incomplète.";
+"AlertiCloudTitle" = "Connexion iCloud";
+"AlertiCloudMessage" = "Connectez-vous à iCloud pour synchroniser vos promesses sur tous vos appareils.";
+"OkButton" = "OK";
+
+"appearance" = "Apparence";
+"dark_mode" = "Mode Sombre";
+"language" = "Langue";
+"tutorial" = "Tutoriel";
+"review_tutorial" = "Revoir le tutoriel";
+"settings" = "Réglages";
+
+"account_title" = "Mon Compte";
+"connect_prompt" = "Connectez-vous";
+"login_button" = "Connexion";
+"AccountTitle" = "Mon Compte";
+"AccountLoginPrompt" = "Connectez-vous";
+"AccountLoginButton" = "Connexion";
+
+"new_promise" = "Nouvelle Promesse";
+"cancel" = "Annuler";
+"add" = "Ajouter";
+"title" = "Titre";
+"notes" = "Notes";
+"start_date" = "Début";
+"end_date" = "Fin";
+"priority" = "Priorité";
+"priority_low" = "Basse";
+"priority_medium" = "Moyenne";
+"priority_high" = "Haute";
+"PriorityLow" = "Basse";
+"PriorityMedium" = "Moyenne";
+"PriorityHigh" = "Haute";
+"files" = "Fichiers";
+"import_files" = "Importer des fichiers";
+
+"AddPromiseNavTitle" = "Nouvelle Promesse";
+"AddPromiseTitleHeader" = "Titre";
+"AddPromiseTitlePlaceholder" = "Entrez un titre";
+"AddPromiseNotesHeader" = "Notes";
+"AddPromiseDatesHeader" = "Dates";
+"AddPromiseStartDate" = "Début";
+"AddPromiseEndDate" = "Fin";
+"AddPromisePriorityHeader" = "Priorité";
+"AddPromisePriorityPicker" = "Priorité";
+"AddPromiseFilesHeader" = "Fichiers";
+"AddPromiseImportFilesButton" = "Importer des fichiers";
+
+"detail_title" = "Détail";
+"detail_navigation_title" = "Détail";
+"detail_edit_button" = "Modifier";
+"detail_notes" = "Notes";
+"detail_no_notes" = "Aucune note";
+"detail_progress" = "Progression";
+"detail_progress_percent" = "Progression : %d%%";
+"detail_status" = "Statut";
+"detail_status_active" = "En cours";
+"detail_status_completed" = "Accomplie";
+"detail_status_failed" = "Échouée";
+"detail_status_pinned" = "Épinglée";
+"detail_priority" = "Priorité";
+"detail_dates" = "Dates";
+"detail_start_date" = "Début : %@";
+"detail_end_date" = "Fin : %@";
+"detail_files" = "Fichiers";
+
+"edit_promise" = "Modifier la promesse";
+"save" = "Enregistrer";
+"edit_title" = "Titre";
+"edit_title_placeholder" = "Titre";
+"edit_notes" = "Notes";
+"edit_priority" = "Priorité";
+"edit_dates" = "Dates";
+"edit_start_date" = "Début";
+"edit_end_date" = "Fin";
+"edit_navigation_title" = "Modifier la promesse";
+"button_cancel" = "Annuler";
+"button_save" = "Enregistrer";
+
+"mark_complete" = "Marquer Accomplie";
+"mark_incomplete" = "Marquer Incomplète";
+"mark_failed" = "Marquer Échouée";
+"mark_active" = "Marquer Active";
+"delete" = "Supprimer";
+"time_remaining" = "%dj %dh restants";
+"finished" = "Terminé";
+
+"tutorial_title" = "Tutoriel";
+"tutorial_welcome" = "Bienvenue dans PromiseTracker";
+"tutorial_intro" = "Voici comment fonctionne l’application :";
+"tutorial_add_promise" = "Ajoutez vos promesses avec le bouton ➕";
+"tutorial_progress_bar" = "Suivez votre progression grâce aux barres colorées";
+"tutorial_mark_status" = "Marquez comme accomplie, échouée, ou épinglez via un appui long";
+"tutorial_manage_settings" = "Gérez vos réglages dans l’onglet dédié";
+"tutorial_start" = "Commencer";
+
+"onboarding_title_1" = "Bienvenue";
+"onboarding_desc_1" = "Suivez vos promesses facilement et simplement.";
+"onboarding_title_2" = "Priorisez";
+"onboarding_desc_2" = "Attribuez des priorités et suivez la progression.";
+"onboarding_title_3" = "Rapide & Pratique";
+"onboarding_desc_3" = "Utilisez 3D Touch pour modifier rapidement vos tâches.";
+"onboarding_button_next" = "Suivant";
+"onboarding_button_start" = "Commencer";
+
+"enter_username" = "Entrez votre prénom";
+"time_remaining_format" = "%dj %dh restants";
+"username" = "Votre prénom";
+"completed" = "Terminé";

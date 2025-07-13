@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  PromiseTracker
+
+  Created by Yanis Racouët on 7/12/25.
+  
+*/
+"Promises" = "Обещания";
+"Tracking" = "Отслеживание";
+"Settings" = "Настройки";
+"Account" = "Аккаунт";
+"Title" = "Заголовок";
+"Notes" = "Заметки";
+"Dates" = "Даты";
+"Start" = "Начало";
+"End" = "Конец";
+"New Promise" = "Новое обещание";
+"Add" = "Добавить";
+"Cancel" = "Отмена";
+"Progress" = "Прогресс";
+"Completed" = "Выполнено";
+"Pinned" = "Закреплено";
+"Details" = "Детали";
+"Save" = "Сохранить";
+"Language" = "Язык";
+"Dark Mode" = "Темный режим";
+"Connect" = "Войти";
+"Login" = "Авторизация";
+"My Account" = "Мой аккаунт";

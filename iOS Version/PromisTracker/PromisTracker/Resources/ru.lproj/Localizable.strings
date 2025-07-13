@@ -1,0 +1,140 @@
+/* ContentView */
+"HelloUser" = "Здравствуйте, %@!";
+"YouHaveActivePromises" = "У вас %d активных обещаний";
+"SearchPlaceholder" = "Поиск...";
+"ActivePromisesSection" = "Активные обещания";
+"CompletedPromisesSection" = "Выполнено";
+"FailedPromisesSection" = "Неудачи";
+"PromisesTitle" = "Обещания";
+"TabTracking" = "Отслеживание";
+"TabSettings" = "Настройки";
+"TabAccount" = "Аккаунт";
+"AlertQuickAction" = "Быстрое действие";
+"AlertPromiseCompleted" = "Обещание отмечено как выполненное.";
+"AlertPromiseIncomplete" = "Обещание отмечено как невыполненное.";
+"AlertiCloudTitle" = "Подключение iCloud";
+"AlertiCloudMessage" = "Войдите в iCloud для синхронизации обещаний на всех устройствах.";
+"OkButton" = "ОК";
+
+/* SettingsView */
+"appearance" = "Внешний вид";
+"dark_mode" = "Темный режим";
+"language" = "Язык";
+"tutorial" = "Учебник";
+"review_tutorial" = "Повторить учебник";
+"settings" = "Настройки";
+
+/* AccountView */
+"account_title" = "Мой аккаунт";
+"connect_prompt" = "Пожалуйста, войдите";
+"login_button" = "Вход";
+
+/* AddPromiseView */
+"new_promise" = "Новое обещание";
+"cancel" = "Отмена";
+"add" = "Добавить";
+"title" = "Заголовок";
+"notes" = "Заметки";
+"start_date" = "Начало";
+"end_date" = "Конец";
+"priority" = "Приоритет";
+"priority_low" = "Низкий";
+"priority_medium" = "Средний";
+"priority_high" = "Высокий";
+"files" = "Файлы";
+"import_files" = "Импортировать файлы";
+
+/* PromiseDetailView */
+"detail_title" = "Детали";
+"status_completed" = "Выполнено";
+"status_in_progress" = "В процессе";
+"status_failed" = "Неудача";
+"status_pinned" = "Закреплено";
+"edit" = "Редактировать";
+"progress_label" = "Прогресс: %d%%";
+
+/* PromiseEditView */
+"edit_promise" = "Редактировать обещание";
+"save" = "Сохранить";
+"edit_title" = "Заголовок";
+"edit_title_placeholder" = "Заголовок";
+"edit_notes" = "Заметки";
+"edit_priority" = "Приоритет";
+"edit_dates" = "Даты";
+"edit_start_date" = "Начало";
+"edit_end_date" = "Конец";
+"edit_navigation_title" = "Редактировать обещание";
+"button_cancel" = "Отмена";
+"button_save" = "Сохранить";
+
+/* PromiseRowView */
+"mark_complete" = "Отметить выполненным";
+"mark_incomplete" = "Отметить невыполненным";
+"mark_failed" = "Отметить неудачным";
+"mark_active" = "Отметить активным";
+"delete" = "Удалить";
+"time_remaining" = "%dj %dh осталось";
+"time_remaining_format" = "%dj %dh осталось";
+"finished" = "Завершено";
+
+/* TutorialView */
+"tutorial_title" = "Учебник";
+"welcome_title" = "Добро пожаловать в PromiseTracker";
+"how_it_works" = "Вот как работает приложение:";
+"tip_add" = "Добавляйте обещания с помощью кнопки ➕";
+"tip_progress" = "Отслеживайте прогресс с помощью цветных полос";
+"tip_context_menu" = "Отмечайте выполненными, неудачными или закрепляйте долгим нажатием";
+"tip_settings" = "Управляйте настройками во вкладке";
+"start" = "Начать";
+
+/* OnboardingView */
+"onboarding_1_title" = "Добро пожаловать";
+"onboarding_1_desc" = "Легко и просто следите за своими обещаниями.";
+"onboarding_2_title" = "Приоритизация";
+"onboarding_2_desc" = "Назначайте приоритеты и следите за прогрессом.";
+"onboarding_3_title" = "Быстро и удобно";
+"onboarding_3_desc" = "Используйте 3D Touch для быстрого редактирования задач.";
+"next" = "Далее";
+"start_now" = "Начать";
+
+"enter_username" = "Введите ваше имя";
+/* PromiseDetailView */
+"detail_navigation_title" = "Детали обещания";
+"edit_navigation_title" = "Редактировать обещание";
+
+"detail_notes" = "Заметки";
+"detail_progress" = "Прогресс";
+"detail_progress_percent" = "Прогресс: %d%%";
+"detail_status" = "Статус";
+"detail_status_active" = "В процессе";
+"detail_status_failed" = "Не выполнено";
+"detail_priority" = "Приоритет";
+"detail_dates" = "Даты";
+"detail_start_date" = "Начало";
+"detail_end_date" = "Конец";
+"detail_edit_button" = "Редактировать";
+"detail_status_completed" = "Выполнена";
+"detail_no_notes" = "Нет заметок";
+"addpromise_nav_title" = "Новое обещание";
+"addpromise_nav_cancel" = "Отмена";
+"addpromise_nav_save" = "Сохранить";
+
+"addpromisetitleheader" = "Заголовок";
+"addpromisetitleplaceholder" = "Введите заголовок";
+"addpromisenotesheader" = "Заметки";
+"addpromisedatesheader" = "Даты";
+"addpromisestartdate" = "Начало";
+"addpromiseenddate" = "Конец";
+"addpromisepriorityheader" = "Приоритет";
+"priority_low" = "Низкий";
+"priority_medium" = "Средний";
+"priority_high" = "Высокий";
+
+"addpromisefilesheader" = "Файлы";
+"addpromisesimportfilesbutton" = "Импорт файлов";
+
+"add" = "Добавить";
+"cancel" = "Отмена";
+
+"account_title" = "Мой аккаунт";
+"account_login_prompt" = "Пожалуйста, войдите";
